@@ -1,12 +1,116 @@
-
-{
-  "project": "FlavorFusion Recipe Book",
-  "version": "1.0.0",
-  "author": "OpenAI",
-  "features": [
-    "Responsive Design",
-    "Dynamic Recipe Cards",
-    "Smooth Scrolling",
-    "Modern UI"
-  ]
-}
+[
+  {
+    "name": "Butter Chicken",
+    "country": "India",
+    "image": "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?q=80&w=1200",
+    "description": "Creamy and flavorful Indian chicken curry.",
+    "ingredients": [
+      "500g chicken",
+      "2 onions",
+      "2 tomatoes",
+      "1 cup cream",
+      "Butter",
+      "Spices"
+    ],
+    "steps": [
+      "Marinate chicken with spices and yogurt.",
+      "Cook onions and tomatoes into gravy.",
+      "Add chicken and simmer well.",
+      "Mix cream and butter before serving."
+    ]
+  },
+  {
+    "name": "Biryani",
+    "country": "India",
+    "image": "https://images.unsplash.com/photo-1563379091339-03246963d96c?q=80&w=1200",
+    "description": "Fragrant rice dish layered with spices and meat.",
+    "ingredients": [
+      "2 cups basmati rice",
+      "500g chicken",
+      "Spices",
+      "Onions",
+      "Mint leaves"
+    ],
+    "steps": [
+      "Cook rice partially.",
+      "Prepare spicy chicken masala.",
+      "Layer rice and chicken.",
+      "Cook on low heat for 20 minutes."
+    ]
+  },
+  {
+    "name": "Masala Dosa",
+    "country": "India",
+    "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?q=80&w=1200",
+    "description": "Crispy South Indian dosa stuffed with potato masala.",
+    "ingredients": [
+      "Dosa batter",
+      "Potatoes",
+      "Onions",
+      "Mustard seeds",
+      "Curry leaves"
+    ],
+    "steps": [
+      "Prepare potato masala filling.",
+      "Spread dosa batter on hot tawa.",
+      "Add filling and fold dosa.",
+      "Serve with chutney and sambar."
+    ]
+  },
+  {
+    "name": "Pizza Margherita",
+    "country": "Italy",
+    "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1200",
+    "description": "Classic Italian pizza with tomato and cheese.",
+    "ingredients": [
+      "Pizza dough",
+      "Tomato sauce",
+      "Mozzarella cheese",
+      "Basil"
+    ],
+    "steps": [
+      "Prepare pizza base.",
+      "Spread tomato sauce evenly.",
+      "Add cheese and basil.",
+      "Bake until crust turns golden."
+    ]
+  },
+  {
+    "name": "Sushi",
+    "country": "Japan",
+    "image": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?q=80&w=1200",
+    "description": "Traditional Japanese rice rolls with seafood and vegetables.",
+    "ingredients": [
+      "Sushi rice",
+      "Nori sheets",
+      "Salmon",
+      "Cucumber",
+      "Soy sauce"
+    ],
+    "steps": [
+      "Cook sushi rice properly.",
+      "Place nori sheet on bamboo mat.",
+      "Add fillings and roll tightly.",
+      "Slice and serve with soy sauce."
+    ]
+  },
+  {
+    "name": "Tacos",
+    "country": "Mexico",
+    "image": "https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?q=80&w=1200",
+    "description": "Mexican tortillas filled with meat and vegetables.",
+    "ingredients": [
+      "Tortillas",
+      "Chicken",
+      "Lettuce",
+      "Cheese",
+      "Salsa"
+    ],
+    "steps": [
+      "Cook chicken with spices.",
+      "Warm tortillas.",
+      "Fill tortillas with chicken and toppings.",
+      "Serve with salsa."
+    ]
+  }
+]

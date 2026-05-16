@@ -1,41 +1,48 @@
+fetch('data.json')
+  .then(response => response.json())
+  .then(recipes => {
+    const recipeContainer = document.getElementById('recipeContainer');
 
-const recipes = [
-  {
-    name: "Creamy Pasta",
-    image: "https://images.unsplash.com/photo-1521389508051-d7ffb5dc8f70?q=80&w=1200",
-    description: "A rich and creamy Italian pasta recipe loaded with flavor."
-  },
-  {
-    name: "Veggie Pizza",
-    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1200",
-    description: "Crispy crust topped with fresh vegetables and mozzarella cheese."
-  },
-  {
-    name: "Chocolate Cake",
-    image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1200",
-    description: "Soft and moist chocolate cake perfect for dessert lovers."
-  }
-];
+    recipes.forEach(recipe => {
+      const card = document.createElement('div');
+      card.classList.add('recipe-card');
 
-const recipeContainer = document.getElementById("recipeContainer");
+      const ingredientsList = recipe.ingredients
+        .map(item => `<li>${item}</li>`)
+        .join('');
 
-recipes.forEach(recipe => {
-  const card = document.createElement("div");
-  card.classList.add("recipe-card");
+      const stepsList = recipe.steps
+        .map(step => `<li>${step}</li>`)
+        .join('');
 
-  card.innerHTML = `
-    <img src="${recipe.image}" alt="${recipe.name}" />
-    <div class="recipe-card-content">
-      <h3>${recipe.name}</h3>
-      <p>${recipe.description}</p>
-    </div>
-  `;
+      card.innerHTML = `
+        <img src="${recipe.image}" alt="${recipe.name}">
 
-  recipeContainer.appendChild(card);
-});
+        <div class="recipe-card-content">
+          <h3>${recipe.name}</h3>
+          <p><strong>Country:</strong> ${recipe.country}</p>
+          <p>${recipe.description}</p>
 
-document.getElementById("exploreBtn").addEventListener("click", () => {
-  document.getElementById("recipes").scrollIntoView({
-    behavior: "smooth"
+          <h4>Ingredients</h4>
+          <ul>
+            ${ingredientsList}
+          </ul>
+
+          <h4>Steps</h4>
+          <ol>
+            ${stepsList}
+          </ol>
+        </div>
+      `;
+
+      recipeContainer.appendChild(card);
+    });
+  })
+  .catch(error => console.error('Error loading recipes:', error));
+
+
+document.getElementById('exploreBtn').addEventListener('click', () => {
+  document.getElementById('recipes').scrollIntoView({
+    behavior: 'smooth'
   });
 });
