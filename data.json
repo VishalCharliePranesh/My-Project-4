@@ -1,0 +1,12 @@
+
+{
+  "project": "FlavorFusion Recipe Book",
+  "version": "1.0.0",
+  "author": "OpenAI",
+  "features": [
+    "Responsive Design",
+    "Dynamic Recipe Cards",
+    "Smooth Scrolling",
+    "Modern UI"
+  ]
+}
