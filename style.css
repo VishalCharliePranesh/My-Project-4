@@ -162,6 +162,7 @@ footer {
   }
 }
 .recipe-card ul,
+.recipe-card ul,
 .recipe-card ol {
   text-align: left;
   margin-top: 10px;
@@ -171,4 +172,12 @@ footer {
 .recipe-card h4 {
   margin-top: 15px;
   color: #ff6b35;
+}
+
+.recipe-card-content {
+  padding: 20px;
+}
+
+.recipe-card-content li {
+  margin-bottom: 8px;
 }

@@ -40,7 +40,6 @@ fetch('data.json')
   })
   .catch(error => console.error('Error loading recipes:', error));
 
-
 document.getElementById('exploreBtn').addEventListener('click', () => {
   document.getElementById('recipes').scrollIntoView({
     behavior: 'smooth'
